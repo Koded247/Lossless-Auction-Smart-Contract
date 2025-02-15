@@ -28,7 +28,7 @@ describe("Auction", function () {
             const Auction = await ethers.getContractFactory("Auction");
             const auction = await Auction.deploy(auctionDuration);
             console.log("Deployed contract address:", auction.target);
-            expect(auction.target).to.match(/^0x[a-fA-F0-9]{40}$/); // Check if address is valid
+            expect(auction.target).to.match(/^0x[a-fA-F0-9]{40}$/);
         });
     });
 
