@@ -2,7 +2,7 @@ import { ethers } from "hardhat";
 
 async function main() {
   // i will put deployed contract
-  const AUCTION_ADDRESS = "";
+  const AUCTION_ADDRESS = ""; //my contract address
 
   // contract instance
   const Auction = await ethers.getContractFactory("Auction");
